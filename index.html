@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://neyonmatrix.ai">
     
     <meta property="og:title" content="Neyon Matrix AI - Universal Business Intelligence Engine">
-    <meta property="og:description" content=" Extract verified corporate prospects, local businesses, and market leads worldwide. Real-time extraction with single-click WhatsApp, Email, & Call routing.">
+    <meta property="og:description" content="Extract verified corporate prospects, local businesses, and market leads worldwide. Real-time extraction with single-click WhatsApp, Email, & Call routing.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -89,11 +89,11 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
                     <div class="relative">
                         <span class="absolute left-3 top-1/2 -translate-y-1/2 text-[10px] uppercase font-bold text-slate-600">Niche Target</span>
-                        <input type="text" id="mining-keyword" value="Real Estate & Wholesalers" class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-24 pr-4 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500 font-medium">
+                        <input type="text" id="mining-keyword" placeholder="Enter keywords (e.g., Real Estate & Wholesalers)" class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-24 pr-4 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500 font-medium">
                     </div>
                     <div class="relative">
                         <span class="absolute left-3 top-1/2 -translate-y-1/2 text-[10px] uppercase font-bold text-slate-600">Global Region</span>
-                        <input type="text" id="mining-location" value="Dubai / USA / India" class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-24 pr-4 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500 font-medium">
+                        <input type="text" id="mining-location" placeholder="Enter region (e.g., Dubai / USA / India)" class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-24 pr-4 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500 font-medium">
                     </div>
                     <div>
                         <button id="search-btn" onclick="triggerSearchMining()" class="w-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-1.5 shadow-md">
@@ -221,6 +221,7 @@
             renderDynamicStreamGrid();
         }
 
+        // 🛠️ AUTOMATED DISCOVERY MATRIX CHANNELS (FIXED BUTTON RENDERING)
         function renderDynamicStreamGrid() {
             const filteredDataset = activeSourceFilter === 'all' 
                 ? globalLeadMatrix 
@@ -236,31 +237,37 @@
                 return;
             }
 
+            // Desktop Dynamic Live Row Rendering
             desktopTbody.innerHTML = filteredDataset.map(item => `
                 <tr class="hover:bg-slate-900/20 transition-colors">
                     <td class="p-4">
-                        <div class="font-bold text-slate-200">${item.brand || item.title || 'N/A'}</div>
-                        <div class="text-[11px] text-blue-400 font-mono mt-0.5">${item.link || item.address || 'Live Source Map'}</div>
+                        <div class="font-bold text-slate-200">${item.brand || 'N/A'}</div>
+                        <div class="text-[11px] text-blue-400 font-mono mt-0.5">${item.link || 'Live Source Map'}</div>
                     </td>
                     <td class="p-4 text-slate-300 font-medium">${item.exec || 'Executive Manager'}</td>
                     <td class="p-4"><span class="bg-slate-950 border border-slate-800 text-slate-400 text-[11px] px-2.5 py-1 rounded-lg font-medium">${item.tag || 'Live Node Extraction'}</span></td>
-                    <td class="p-4 text-xs font-mono text-emerald-400 flex items-center gap-1 pt-5"><i data-lucide="check" class="w-3.5 h-3.5"></i> ${item.log || '100% Secure Pass'}</td>
+                    <td class="p-4 text-xs font-mono text-emerald-400">
+                        <div class="flex items-center gap-1 pt-1">
+                            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> ${item.log || '100% Secure Pass'}
+                        </div>
+                    </td>
                     <td class="p-4">
                         <div class="flex items-center justify-center gap-2">
-                            <a href="https://wa.me/${item.phone || ''}?text=${encodeURIComponent(item.msg || 'Hello')}" target="_blank" class="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500/30 text-emerald-400 rounded-xl transition-all"><i data-lucide="message-square" class="w-4 h-4"></i></a>
-                            <a href="mailto:${item.email || ''}?subject=Lead%20Discovery&body=${encodeURIComponent(item.msg || 'Hello')}" class="p-2 bg-slate-950 border border-slate-800 hover:border-blue-500/30 text-blue-400 rounded-xl transition-all"><i data-lucide="mail" class="w-4 h-4"></i></a>
-                            <a href="tel:+${item.phone || ''}" class="p-2 bg-slate-950 border border-slate-800 hover:border-purple-500/30 text-purple-400 rounded-xl transition-all"><i data-lucide="phone" class="w-4 h-4"></i></a>
+                            <a href="https://wa.me/${item.phone}?text=${encodeURIComponent(item.msg)}" target="_blank" class="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500/30 text-emerald-400 rounded-xl transition-all" title="WhatsApp Instant Chat"><i data-lucide="message-square" class="w-4 h-4"></i></a>
+                            <a href="mailto:${item.email}?subject=Lead%20Discovery&body=${encodeURIComponent(item.msg)}" class="p-2 bg-slate-950 border border-slate-800 hover:border-blue-500/30 text-blue-400 rounded-xl transition-all" title="Direct Email Outreach"><i data-lucide="mail" class="w-4 h-4"></i></a>
+                            <a href="tel:${item.phone}" class="p-2 bg-slate-950 border border-slate-800 hover:border-purple-500/30 text-purple-400 rounded-xl transition-all" title="Direct Cellular Call"><i data-lucide="phone" class="w-4 h-4"></i></a>
                         </div>
                     </td>
                 </tr>
             `).join('');
 
+            // Mobile Dynamic Responsive Card Rendering
             mobileContainer.innerHTML = filteredDataset.map(item => `
                 <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-3 shadow-md">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h4 class="font-bold text-slate-200 text-sm">${item.brand || item.title || 'N/A'}</h4>
-                            <p class="text-[11px] text-blue-400 font-mono mt-0.5">${item.link || item.address || 'Live Source Map'}</p>
+                            <h4 class="font-bold text-slate-200 text-sm">${item.brand || 'N/A'}</h4>
+                            <p class="text-[11px] text-blue-400 font-mono mt-0.5">${item.link || 'Live Source Map'}</p>
                         </div>
                         <span class="bg-slate-950 border border-slate-800 text-slate-400 text-[10px] px-2 py-0.5 rounded-md font-medium">${item.tag || 'Live Node'}</span>
                     </div>
@@ -269,9 +276,9 @@
                         <div class="text-emerald-400 font-mono flex items-center gap-1 text-[11px] mt-1"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> ${item.log || 'Verified Node'}</div>
                     </div>
                     <div class="grid grid-cols-3 gap-2 pt-1">
-                        <a href="https://wa.me/${item.phone || ''}?text=${encodeURIComponent(item.msg || 'Hello')}" target="_blank" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-emerald-400 font-bold text-xs gap-1 transition-all"><i data-lucide="message-square" class="w-3.5 h-3.5"></i> Chat</a>
-                        <a href="mailto:${item.email || ''}?subject=Lead%20Discovery&body=${encodeURIComponent(item.msg || 'Hello')}" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-blue-400 font-bold text-xs gap-1 transition-all"><i data-lucide="mail" class="w-3.5 h-3.5"></i> Email</a>
-                        <a href="tel:+${item.phone || ''}" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-purple-400 font-bold text-xs gap-1 transition-all"><i data-lucide="phone" class="w-3.5 h-3.5"></i> Call</a>
+                        <a href="https://wa.me/${item.phone}?text=${encodeURIComponent(item.msg)}" target="_blank" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-emerald-400 font-bold text-xs gap-1 transition-all"><i data-lucide="message-square" class="w-3.5 h-3.5"></i> Chat</a>
+                        <a href="mailto:${item.email}?subject=Lead%20Discovery&body=${encodeURIComponent(item.msg)}" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-blue-400 font-bold text-xs gap-1 transition-all"><i data-lucide="mail" class="w-3.5 h-3.5"></i> Email</a>
+                        <a href="tel:${item.phone}" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-purple-400 font-bold text-xs gap-1 transition-all"><i data-lucide="phone" class="w-3.5 h-3.5"></i> Call</a>
                     </div>
                 </div>
             `).join('');
@@ -279,10 +286,13 @@
             lucide.createIcons();
         }
 
-        // ⚡ ASLI LIVE BACKEND FETCH INTEGRATION
+        // ⚡ ASLI LIVE BACKEND FETCH INTEGRATION WITH INPUT AUTO-RESET
         async function triggerSearchMining() {
-            const keyword = document.getElementById('mining-keyword').value.trim();
-            const location = document.getElementById('mining-location').value.trim();
+            const keywordInputEl = document.getElementById('mining-keyword');
+            const locationInputEl = document.getElementById('mining-location');
+            
+            const keyword = keywordInputEl.value.trim();
+            const location = locationInputEl.value.trim();
             const searchBtn = document.getElementById('search-btn');
             const liveIndicator = document.getElementById('live-indicator');
 
@@ -309,21 +319,28 @@
 
                 const rawData = await response.json();
                 
-                // Formating the data to match your custom frontend layout
-                globalLeadMatrix = rawData.map(item => ({
-                    brand: item.title || item.name || item.brand || "Business Entity",
-                    link: item.address || item.website || item.link || "Live Coordinates Stack",
-                    exec: item.executive || item.name || "Decision Maker",
-                    tag: activeSourceFilter === 'all' ? "Universal Node Extracted" : `${activeSourceFilter.toUpperCase()} Crawler`,
-                    log: "SSL Security Pass & Verified",
-                    phone: item.phone ? item.phone.replace(/[^0-9]/g, '') : "919999999999",
-                    email: item.email || "info@corporate-prospect.com",
-                    msg: `Hello, extracted details via Neyon Matrix AI framework for "${keyword}". Let's discuss business automation options.`,
-                    filterGroup: activeSourceFilter === 'all' ? 'maps' : activeSourceFilter
-                }));
+                // Formatting data properly with extracted fields
+                globalLeadMatrix = rawData.map(item => {
+                    let rawPhone = item.phone ? item.phone.replace(/[^0-9]/g, '') : "919999999999";
+                    return {
+                        brand: item.title || item.name || item.brand || "Business Entity",
+                        link: item.address || item.website || item.link || "Live Coordinates Stack",
+                        exec: item.executive || item.name || "Decision Maker",
+                        tag: activeSourceFilter === 'all' ? "Universal Node Extracted" : `${activeSourceFilter.toUpperCase()} Crawler`,
+                        log: "SSL Security Pass & Verified",
+                        phone: rawPhone,
+                        email: item.email || "info@corporate-prospect.com",
+                        msg: `Hello, extracted details via Neyon Matrix AI framework for "${keyword}". Let's discuss business automation options.`,
+                        filterGroup: activeSourceFilter === 'all' ? 'maps' : activeSourceFilter
+                    };
+                });
 
                 renderDynamicStreamGrid();
                 liveIndicator.className = "w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse";
+
+                // 🔄 AUTOMATIC REFRESH/RESET INPUT BOXES AFTER FETCH
+                keywordInputEl.value = '';
+                locationInputEl.value = '';
 
             } catch (error) {
                 console.error("Extraction error:", error);
