@@ -1,375 +1,334 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full bg-slate-950 text-slate-100">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Neyon Matrix AI - Global B2B Lead Generation & Mining Intelligence</title>
-    <meta name="description" content="Deploy automated multi-source mining nodes. Neyon Matrix AI extracts live, verified business contacts globally across all industries with direct instant outreach channels.">
-    <meta name="keywords" content="B2B lead generation tool, global business database, web scraper engine, verified email contacts, marketing automation console">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://neyonmatrix.ai">
-    
-    <meta property="og:title" content="Neyon Matrix AI - Universal Business Intelligence Engine">
-    <meta property="og:description" content="Extract verified corporate prospects, local businesses, and market leads worldwide. Real-time extraction with single-click WhatsApp, Email, & Call routing.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://neyonmatrix.ai">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Neyon Matrix Intelligence Hub">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Neyon Matrix AI - High-Speed Universal Data Node">
-    <meta name="twitter:description" content="Automate international B2B outreach pipelines and target any niche efficiently.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80">
-    
+    <title>Kraken Swarm Cluster</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .cyber-glow { box-shadow: 0 0 40px -15px rgba(59, 130, 246, 0.25); }
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
     </style>
 </head>
-<body class="h-full antialiased relative">
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-emerald-500 selection:text-slate-950">
 
-    <div class="min-h-screen flex flex-col justify-between">
+    <header class="border-b border-slate-900 bg-slate-950/80 backdrop-blur-md sticky top-0 z-40 px-4 lg:px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-slate-950 text-lg font-black shadow-lg">
+                <i class="fa-solid fa-ghost"></i>
+            </div>
+            <div>
+                <h1 class="text-sm font-black tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-emerald-400">Kraken Matrix</h1>
+                <p class="text-[8px] text-slate-500 font-mono tracking-widest uppercase">Global Cloud Suite</p>
+            </div>
+        </div>
         
-        <header class="border-b border-slate-900 bg-slate-950/80 backdrop-blur-xl sticky top-0 z-50 px-4 lg:px-8 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="p-2 bg-blue-600/10 border border-blue-500/20 rounded-xl text-blue-400">
-                    <i data-lucide="activity" class="w-5 h-5"></i>
-                </div>
-                <div>
-                    <h1 class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
-                        Neyon Matrix AI <span class="text-[10px] bg-blue-500/10 border border-blue-500/20 text-blue-400 px-2 py-0.5 rounded-full font-medium">Console v2.5</span>
-                    </h1>
-                </div>
-            </div>
-
-            <div class="flex items-center gap-4">
-                <button onclick="openRechargeModal()" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-lg shadow-blue-500/10">
-                    <i data-lucide="zap" class="w-3.5 h-3.5"></i> Recharge Plan
-                </button>
-                <div class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 text-xs font-semibold" title="Secure Encryption Active">
-                    <i data-lucide="user-check" class="w-4 h-4 text-emerald-400"></i>
-                </div>
-            </div>
-        </header>
-
-        <main class="flex-grow p-4 lg:p-8 space-y-6 max-w-6xl mx-auto w-full">
+        <div class="flex items-center space-x-3">
+            <div id="tier-badge" class="hidden sm:inline-block px-2.5 py-1 rounded-lg text-[9px] font-bold font-mono uppercase bg-slate-900 border border-slate-800 text-slate-400">Tier: Free</div>
+            <div id="credits-badge" class="px-2.5 py-1 rounded-lg text-[9px] font-bold font-mono uppercase bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">Tokens: --</div>
             
-            <section class="bg-slate-900/40 border border-slate-800 rounded-2xl p-5 space-y-4">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-                    <div>
-                        <h2 class="text-sm font-bold text-slate-200 uppercase tracking-wider flex items-center gap-2">
-                            <i data-lucide="globe" class="w-4 h-4 text-blue-400"></i> Global Discovery Engine
-                        </h2>
-                        <p class="text-[11px] text-slate-400 mt-0.5">Target any country or custom business niche worldwide seamlessly.</p>
+            <div class="relative">
+                <button onclick="toggleDropdown()" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 transition">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                </button>
+                <div id="profile-dropdown" class="hidden absolute right-0 mt-3 w-60 bg-slate-950 border border-slate-900 rounded-2xl p-4 shadow-2xl z-50 space-y-3 font-mono text-xs">
+                    <div class="border-b border-slate-900 pb-2">
+                        <p class="text-[9px] text-slate-500 uppercase">Active Node ID</p>
+                        <p id="drop-node-id" class="text-slate-300 font-bold truncate">Loading...</p>
                     </div>
-                    
-                    <div class="flex flex-wrap gap-2 w-full sm:w-auto">
-                        <button onclick="setActiveSourceFilter('all')" id="filter-all" class="bg-blue-600/10 border border-blue-500/40 text-blue-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none">
-                            <i data-lucide="shuffle" class="w-3.5 h-3.5"></i> All Nodes
-                        </button>
-                        <button onclick="setActiveSourceFilter('maps')" id="filter-maps" class="bg-slate-950 border border-slate-800 text-slate-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none">
-                            <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Maps Crawler
-                        </button>
-                        <button onclick="setActiveSourceFilter('web')" id="filter-web" class="bg-slate-950 border border-slate-800 text-slate-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none">
-                            <i data-lucide="code" class="w-3.5 h-3.5"></i> Web Extractor
-                        </button>
-                        <button onclick="setActiveSourceFilter('marketplaces')" id="filter-marketplaces" class="bg-slate-950 border border-slate-800 text-slate-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none">
-                            <i data-lucide="shopping-cart" class="w-3.5 h-3.5"></i> Marketplaces
-                        </button>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
-                    <div class="relative">
-                        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-[10px] uppercase font-bold text-slate-600">Niche Target</span>
-                        <input type="text" id="mining-keyword" placeholder="Enter keywords (e.g., Real Estate & Wholesalers)" class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-24 pr-4 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500 font-medium">
-                    </div>
-                    <div class="relative">
-                        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-[10px] uppercase font-bold text-slate-600">Global Region</span>
-                        <input type="text" id="mining-location" placeholder="Enter region (e.g., Dubai / USA / India)" class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-24 pr-4 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500 font-medium">
-                    </div>
-                    <div>
-                        <button id="search-btn" onclick="triggerSearchMining()" class="w-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-1.5 shadow-md">
-                            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Deploy Global Crawler Node
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="bg-slate-900/30 border border-slate-800 rounded-2xl overflow-hidden shadow-sm">
-                <div class="p-4 border-b border-slate-800 flex justify-between items-center bg-slate-900/10">
-                    <div class="flex items-center gap-2">
-                        <span id="live-indicator" class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                        <h3 class="text-xs font-bold text-slate-400 tracking-wide uppercase">Universal Target Extraction Matrix</h3>
-                    </div>
-                    <button onclick="exportStructuredCSV()" class="text-[11px] font-semibold bg-slate-950 hover:bg-slate-900 border border-slate-800 text-emerald-400 px-3 py-1.5 rounded-xl flex items-center gap-1 transition-all">
-                        <i data-lucide="download" class="w-3.5 h-3.5"></i> Export Universal CSV
+                    <button onclick="openHistory()" class="w-full text-left py-1.5 px-2 rounded-lg hover:bg-slate-900 text-slate-300 hover:text-emerald-400 transition flex items-center space-x-2">
+                        <i class="fa-solid fa-clock-rotate-left"></i><span>Build History Vault</span>
                     </button>
-                </div>
-
-                <div class="hidden md:block overflow-x-auto w-full">
-                    <table class="w-full text-left border-collapse whitespace-nowrap">
-                        <thead>
-                            <tr class="border-b border-slate-800 text-slate-400 text-xs font-semibold bg-slate-950/20">
-                                <th class="p-4">Target Company Entity</th>
-                                <th class="p-4">Decision Maker Executive</th>
-                                <th class="p-4">Extraction Channel Source</th>
-                                <th class="p-4">Security Verification Log</th>
-                                <th class="p-4 text-center">Instant Outreach Channels</th>
-                            </tr>
-                        </thead>
-                        <tbody id="desktop-stream-tbody" class="text-xs divide-y divide-slate-900">
-                            <tr><td colspan="5" class="text-center text-slate-500 py-8">Enter target niche and deploy crawler to fetch live data.</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div id="mobile-stream-cards-container" class="block md:hidden p-4 space-y-3">
-                    <div class="text-center text-slate-500 p-6 text-xs font-medium">Enter target niche and deploy crawler to fetch live data.</div>
-                </div>
-            </section>
-
-        </main>
-
-        <div id="recharge-modal-holder" class="hidden fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4">
-            <div class="bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-6 relative space-y-6 cyber-glow">
-                
-                <div class="flex justify-between items-center border-b border-slate-800 pb-3">
-                    <div>
-                        <h3 class="text-base font-bold text-white flex items-center gap-1.5">
-                            <i data-lucide="credit-card" class="text-blue-400 w-4 h-4"></i> High-Speed Lead Matrix Refill
-                        </h3>
-                        <p class="text-[11px] text-slate-400 mt-0.5">Deploy authorized processing packets directly into your extraction system.</p>
-                    </div>
-                    <button onclick="closeRechargeModal()" class="p-1.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 rounded-full text-slate-400 hover:text-white transition-all">
-                        <i data-lucide="x" class="w-4 h-4"></i>
-                    </button>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    
-                    <div class="bg-slate-950 border border-slate-800 rounded-xl p-5 flex flex-col justify-between space-y-4">
-                        <div class="space-y-1.5">
-                            <span class="text-[9px] uppercase tracking-wider font-extrabold text-slate-400 bg-slate-800 px-2 py-0.5 rounded-sm">File 01: Professional</span>
-                            <div class="text-2xl font-black text-white">₹999<span class="text-[10px] text-slate-500 font-normal"> / mo</span></div>
-                            <p class="text-[11px] text-slate-400 leading-snug">Extract up to 1,000 Verified Premium Target Leads safely across global routes.</p>
-                        </div>
-                        <a href="https://rzp.io/l/existing_professional_plan" target="_blank" class="block w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs py-2 rounded-xl transition-all">Activate Plan</a>
-                    </div>
-
-                    <div class="bg-slate-950 border border-slate-800 rounded-xl p-5 flex flex-col justify-between space-y-4">
-                        <div class="space-y-1.5">
-                            <span class="text-[9px] uppercase tracking-wider font-extrabold text-purple-400 bg-purple-950/40 px-2 py-0.5 rounded-sm">File 02: Enterprise</span>
-                            <div class="text-2xl font-black text-white">₹2,500<span class="text-[10px] text-slate-500 font-normal"> / mo</span></div>
-                            <p class="text-[11px] text-slate-400 leading-snug">3,000 High-Integrity Premium Business Profiles injected via fast cloud lines.</p>
-                        </div>
-                        <a href="phonepe://pay?pa=neyonmatrix@ybl&pn=NeyonMatrixAI&am=2500&cu=INR" class="block w-full text-center bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs py-2 rounded-xl transition-all">Pay via PhonePe</a>
-                    </div>
-
-                    <div class="bg-gradient-to-b from-blue-950/20 to-slate-950 border border-blue-600 rounded-xl p-5 flex flex-col justify-between space-y-4 relative">
-                        <div class="space-y-1.5">
-                            <span class="text-[9px] uppercase tracking-wider font-extrabold text-blue-400 bg-blue-950/50 px-2 py-0.5 rounded-sm">File 03: Unlimited</span>
-                            <div class="text-2xl font-black text-white">₹3,999<span class="text-[10px] text-slate-500 font-normal"> / mo</span></div>
-                            <p class="text-[11px] text-slate-400 leading-snug">Uncapped parallel extraction pipelines with automated background webhooks.</p>
-                        </div>
-                        <a href="https://rzp.io/rzp/1uPtcbJt" target="_blank" class="block w-full text-center bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs py-2 rounded-xl transition-all shadow-md">Deploy Stack</a>
-                    </div>
-
                 </div>
             </div>
         </div>
+    </header>
 
-        <footer class="border-t border-slate-900 bg-slate-950 py-4 text-center text-[11px] text-slate-600">
-            <p>© 2026 Neyon Matrix AI. Engineered for WhatsApp & Telegram High Conversion Link Architecture.</p>
-        </footer>
+    <div class="lg:hidden bg-slate-900/60 border-b border-slate-800 p-2 flex justify-center space-x-4">
+        <button id="tab-btn-console" onclick="switchMobileTab('console')" class="px-4 py-1.5 text-xs font-bold font-mono bg-emerald-500 text-slate-950 rounded-xl shadow-lg">System Console</button>
+        <button id="tab-btn-preview" onclick="switchMobileTab('preview')" class="px-4 py-1.5 text-xs font-bold font-mono text-slate-400 bg-slate-950 border border-slate-800 rounded-xl">Live Application Mirror</button>
+    </div>
+
+    <main class="grid grid-cols-1 lg:grid-cols-12 h-[calc(100vh-73px)] w-full overflow-hidden">
+        <section id="pane-console" class="lg:col-span-5 border-r border-slate-900 p-4 lg:p-6 flex flex-col justify-between bg-slate-950 h-full">
+            <div class="flex-1 flex flex-col min-h-0 space-y-4">
+                <div class="flex items-center justify-between border-b border-slate-900 pb-2">
+                    <h3 class="text-xs font-bold font-mono text-slate-400 uppercase tracking-wider">Swarm Execution Logs</h3>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                </div>
+                <div id="console-logs" class="flex-1 overflow-y-auto bg-black/30 border border-slate-900 rounded-2xl p-4 font-mono text-[11px] space-y-2">
+                    <div class="text-slate-500">Pipeline Online. Input application descriptions, codes or forms below...</div>
+                </div>
+            </div>
+
+            <div class="mt-4 space-y-3">
+                <textarea id="task-input" rows="3" class="w-full bg-slate-900/40 border border-slate-800 focus:border-emerald-500/40 rounded-xl p-3 text-xs font-mono text-slate-200 placeholder-slate-600 focus:outline-none transition resize-none" placeholder="Paste source code layout, forms, or custom system ideas here..."></textarea>
+                <button onclick="triggerSwarmBuild()" class="w-full py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-black font-mono text-xs tracking-wider uppercase rounded-xl transition transform active:scale-[0.99] flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-bolt"></i><span>Compile & Build Safe Web-App</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="pane-preview" class="hidden lg:col-span-7 bg-slate-950 p-4 lg:p-6 lg:flex flex-col space-y-4 h-full">
+            <div class="flex items-center justify-between border-b border-slate-900 pb-2">
+                <h3 class="text-xs font-bold font-mono text-slate-400 uppercase tracking-wider">Live Sandbox Application Stream</h3>
+            </div>
+            <div class="flex-1 w-full bg-slate-900/10 border border-slate-900 rounded-2xl overflow-hidden relative shadow-inner">
+                <div id="lazy-render-trigger-placeholder" class="absolute inset-0 bg-slate-950/90 z-10 flex flex-col items-center justify-center p-4 text-center space-y-4 font-mono">
+                    <div class="w-12 h-12 rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center animate-pulse border border-emerald-500/20">
+                        <i class="fa-solid fa-circle-play text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-200">Application Compilation Successful!</p>
+                        <p class="text-[10px] text-slate-500 mt-1">Ready to boot securely inside isolated workspace mirror context.</p>
+                    </div>
+                    <button onclick="manuallyUnfreezeLazyRender()" class="px-5 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-black text-xs uppercase rounded-xl shadow-lg tracking-wider transition transform active:scale-95 flex items-center space-x-2">
+                        <i class="fa-solid fa-play"></i><span>Live Run Application</span>
+                    </button>
+                </div>
+                <iframe id="sandbox-mirror" class="w-full h-full border-none bg-white" sandbox="allow-scripts allow-modals allow-forms"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <div id="activation-gate-modal" class="hidden fixed inset-0 bg-black/95 backdrop-blur-md z-50 flex items-center justify-center p-4">
+        <div class="w-full max-w-xl bg-slate-950 border border-slate-900 rounded-3xl p-6 shadow-2xl font-mono text-xs space-y-6">
+            <div id="gate-stage-email" class="space-y-4">
+                <div class="text-center space-y-1">
+                    <h3 class="text-sm font-bold text-emerald-400 uppercase tracking-wider">Verify Identity Node Pipeline</h3>
+                    <p class="text-slate-500 text-[11px]">Free session pool exceeded. Map a valid developer email node.</p>
+                </div>
+                <div class="space-y-2">
+                    <input type="email" id="gate-email-field" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-center text-slate-200 focus:border-emerald-500/50 focus:outline-none" placeholder="developer@workspace.com">
+                    <div id="gate-error-box" class="hidden text-rose-400 text-[10px] text-center font-bold"></div>
+                    <button onclick="processGateEmail()" class="w-full py-3 bg-emerald-500 text-slate-950 font-bold uppercase rounded-xl tracking-wider transition">Authenticate Node Identity</button>
+                </div>
+            </div>
+
+            <div id="gate-stage-plans" class="hidden space-y-4">
+                <div class="text-center">
+                    <h3 class="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-amber-400 uppercase tracking-wider">Select Node Allocation Refill</h3>
+                </div>
+                <div class="flex bg-slate-900 p-1 rounded-xl border border-slate-800">
+                    <button id="btn-tab-monthly" onclick="togglePlanTab('monthly')" class="flex-1 py-1.5 text-center font-bold text-[11px] bg-slate-950 text-emerald-400 rounded-lg shadow">Subscriptions</button>
+                    <button id="btn-tab-token" onclick="togglePlanTab('token')" class="flex-1 py-1.5 text-center font-bold text-[11px] text-slate-400 rounded-lg">Pay-As-You-Go</button>
+                </div>
+                <div id="box-monthly-plans" class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                    <div onclick="selectProductTier('lite')" class="border border-slate-900 bg-slate-900/20 p-3 rounded-xl cursor-pointer hover:border-slate-800 transition">
+                        <p class="font-bold text-slate-300">Lite Quota</p>
+                        <div class="text-md font-bold mt-2 text-emerald-400 text-right" id="price-lbl-lite">--</div>
+                    </div>
+                    <div onclick="selectProductTier('infinite')" class="border-2 border-emerald-500/40 bg-emerald-500/5 p-3 rounded-xl cursor-pointer transition">
+                        <p class="font-bold text-slate-200">Dev Infinite</p>
+                        <div class="text-md font-bold mt-2 text-emerald-400 text-right" id="price-lbl-infinite">--</div>
+                    </div>
+                    <div onclick="selectProductTier('enterprise')" class="border border-slate-900 bg-slate-900/20 p-3 rounded-xl cursor-pointer hover:border-slate-800 transition">
+                        <p class="font-bold text-slate-300">Enterprise</p>
+                        <div class="text-md font-bold mt-2 text-emerald-400 text-right" id="price-lbl-enterprise">--</div>
+                    </div>
+                </div>
+                <div id="box-token-plans" class="hidden">
+                    <div onclick="selectProductTier('token_refill')" class="border border-amber-500/40 bg-amber-500/5 p-4 rounded-xl cursor-pointer transition flex justify-between items-center">
+                        <div>
+                            <p class="font-bold text-amber-400">Casual Credit Stack</p>
+                        </div>
+                        <div class="text-lg font-bold text-amber-400" id="price-lbl-token">--</div>
+                    </div>
+                </div>
+                <div id="payment-gateway-wrapper" class="hidden bg-slate-900/60 border border-slate-900 p-4 rounded-2xl text-center space-y-3">
+                    <div id="gateway-inr-upi" class="hidden space-y-2">
+                        <div class="w-24 h-24 bg-white mx-auto rounded-xl flex items-center justify-center text-slate-950 font-black border-4 border-slate-950">[SECURE QR]</div>
+                    </div>
+                    <div id="gateway-global-stripe" class="hidden py-2">
+                        <button onclick="alert('Stripe 3DS Checkout Route Active')" class="w-full py-3 bg-indigo-600 hover:bg-indigo-500 font-bold uppercase rounded-xl text-white transition shadow-xl">Pay via Stripe Gateway</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="history-modal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="w-full max-w-xl bg-slate-950 border border-slate-900 rounded-2xl p-5 shadow-2xl font-mono text-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-900 pb-2">
+                <span class="font-bold uppercase tracking-wider text-emerald-400"><i class="fa-solid fa-folder-open mr-2"></i>Secure Cloud Build Vault</span>
+                <button onclick="closeHistory()" class="text-slate-500 hover:text-rose-400"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="history-rows-container" class="h-60 overflow-y-auto space-y-2"></div>
+        </div>
     </div>
 
     <script>
-        // 🚀 LIVE BACKEND CONNECTION LINK
-        const BACKEND_URL = "https://neyon-matrix-ai.onrender.com"; 
-        
-        let activeSourceFilter = 'all';
-        let globalLeadMatrix = []; // Live data will load here dynamically
+        let sessionNodeId = localStorage.getItem("kraken_session_node") || ("node_" + Math.random().toString(36).substring(2, 13));
+        localStorage.setItem("kraken_session_node", sessionNodeId);
 
-        document.addEventListener("DOMContentLoaded", () => {
-            lucide.createIcons();
-        });
+        const wsProto = window.location.protocol === "https:" ? "wss://" : "ws://";
+        const socket = new WebSocket(wsProto + window.location.host + "/ws/v1/swarm-orchestrator/" + sessionNodeId);
+        let geoPricingMatrix = null;
+        let lastReceivedOutput = "";
 
-        function openRechargeModal() { document.getElementById('recharge-modal-holder').classList.remove('hidden'); }
-        function closeRechargeModal() { document.getElementById('recharge-modal-holder').classList.add('hidden'); }
+        function switchMobileTab(target) {
+            const consolePane = document.getElementById("pane-console");
+            const previewPane = document.getElementById("pane-preview");
+            const btnConsole = document.getElementById("tab-btn-console");
+            const btnPreview = document.getElementById("tab-btn-preview");
 
-        function setActiveSourceFilter(source) {
-            activeSourceFilter = source;
-            const targetIds = ['all', 'maps', 'web', 'marketplaces'];
-            
-            targetIds.forEach(id => {
-                const element = document.getElementById(`filter-${id}`);
-                if(id === source) {
-                    element.className = "bg-blue-600/10 border border-blue-500/40 text-blue-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none";
-                } else {
-                    element.className = "bg-slate-950 border border-slate-800 text-slate-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none";
+            if (target === "console") {
+                consolePane.classList.remove("hidden"); previewPane.classList.add("hidden", "lg:flex");
+                btnConsole.className = "px-4 py-1.5 text-xs font-bold font-mono bg-emerald-500 text-slate-950 rounded-xl shadow-lg";
+                btnPreview.className = "px-4 py-1.5 text-xs font-bold font-mono text-slate-400 bg-slate-950 border border-slate-800 rounded-xl";
+            } else {
+                previewPane.classList.remove("hidden", "lg:col-span-7"); previewPane.classList.add("flex"); consolePane.classList.add("hidden");
+                btnPreview.className = "px-4 py-1.5 text-xs font-bold font-mono bg-emerald-500 text-slate-950 rounded-xl shadow-lg";
+                btnConsole.className = "px-4 py-1.5 text-xs font-bold font-mono text-slate-400 bg-slate-950 border border-slate-800 rounded-xl";
+                manuallyUnfreezeLazyRender();
+            }
+        }
+
+        fetch("/api/v1/geo-pricing")
+            .then(res => res.json())
+            .then(data => {
+                geoPricingMatrix = data;
+                const m = data.matrix;
+                document.getElementById("price-lbl-lite").innerText = m.symbol + m.lite;
+                document.getElementById("price-lbl-infinite").innerText = m.symbol + m.infinite;
+                document.getElementById("price-lbl-enterprise").innerText = m.symbol + m.enterprise;
+                document.getElementById("price-lbl-token").innerText = m.symbol + m.token_refill;
+            });
+
+        socket.onmessage = function(event) {
+            const data = JSON.parse(event.data);
+            if (data.tier) document.getElementById("tier-badge").innerText = "Tier: " + data.tier;
+            if (data.tokens_left !== undefined) document.getElementById("credits-badge").innerText = "Tokens: " + data.tokens_left;
+
+            if (data.agent && data.log) {
+                const cBox = document.getElementById("console-logs");
+                const line = document.createElement("div");
+                line.innerHTML = `<span class="text-emerald-400 font-bold">[${data.agent}]:</span> <span class="text-slate-300">${data.log}</span>`;
+                cBox.appendChild(line); cBox.scrollTop = cBox.scrollHeight;
+
+                if (data.log.includes("Activation Gate protocol initiated")) {
+                    document.getElementById("activation-gate-modal").classList.remove("hidden");
                 }
+            }
+
+            if (data.result_data && data.result_data.status === "SUCCESS") {
+                lastReceivedOutput = data.result_data.full_output;
+                document.getElementById("lazy-render-trigger-placeholder").classList.remove("hidden");
+                const frame = document.getElementById("sandbox-mirror");
+                const doc = frame.contentDocument || frame.contentWindow.document;
+                doc.open(); doc.write("<div style='font-family:sans-serif;padding:20px;color:#475569;'>Awaiting Run Command. Click the system trigger button to initiate sandbox environment execution layer.</div>"); doc.close();
+                if (window.innerWidth < 1024) switchMobileTab('preview');
+            }
+        };
+
+        function manuallyUnfreezeLazyRender() {
+            if (!lastReceivedOutput) return;
+            document.getElementById("lazy-render-trigger-placeholder").classList.add("hidden");
+            const frame = document.getElementById("sandbox-mirror");
+            const doc = frame.contentDocument || frame.contentWindow.document;
+            doc.open(); doc.write(lastReceivedOutput); doc.close();
+        }
+
+        function triggerSwarmBuild() {
+            const inp = document.getElementById("task-input");
+            if (!inp.value.trim()) return;
+            socket.send(JSON.stringify({ task: inp.value.trim() }));
+        }
+
+        function processGateEmail() {
+            const mail = document.getElementById("gate-email-field").value.trim();
+            const errBox = document.getElementById("gate-error-box");
+            errBox.classList.add("hidden");
+
+            fetch("/api/v1/activate-node", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ 
+                    session_id: sessionNodeId, 
+                    email: mail, 
+                    browser_timezone: Intl.DateTimeFormat().resolvedOptions().timeZone 
+                })
+            })
+            .then(res => {
+                if (!res.ok) return res.json().then(err => { throw new Error(err.detail) });
+                return res.json();
+            })
+            .then(data => {
+                if (data.status === "SUCCESS") {
+                    document.getElementById("gate-stage-email").classList.add("hidden");
+                    document.getElementById("gate-stage-plans").classList.remove("hidden");
+                }
+            })
+            .catch(err => {
+                errBox.innerText = err.message; errBox.classList.remove("hidden");
             });
-            
-            renderDynamicStreamGrid();
         }
 
-        // 🛠️ AUTOMATED DISCOVERY MATRIX CHANNELS (FIXED BUTTON RENDERING)
-        function renderDynamicStreamGrid() {
-            const filteredDataset = activeSourceFilter === 'all' 
-                ? globalLeadMatrix 
-                : globalLeadMatrix.filter(item => item.filterGroup === activeSourceFilter);
+        function togglePlanTab(target) {
+            const mBox = document.getElementById("box-monthly-plans");
+            const tBox = document.getElementById("box-token-plans");
+            const btnM = document.getElementById("btn-tab-monthly");
+            const btnT = document.getElementById("btn-tab-token");
 
-            const desktopTbody = document.getElementById('desktop-stream-tbody');
-            const mobileContainer = document.getElementById('mobile-stream-cards-container');
-
-            if(!filteredDataset || filteredDataset.length === 0) {
-                const emptyState = `<div class="text-center text-slate-500 p-6 text-xs font-medium">No live leads found in this channel node.</div>`;
-                desktopTbody.innerHTML = `<tr><td colspan="5" class="text-center text-slate-500 py-8">No data available for this node filter.</td></tr>`;
-                mobileContainer.innerHTML = emptyState;
-                return;
+            if (target === "monthly") {
+                mBox.classList.remove("hidden"); tBox.classList.add("hidden");
+                btnM.className = "flex-1 py-1.5 text-center font-bold text-[11px] bg-slate-950 text-emerald-400 rounded-lg shadow";
+                btnT.className = "flex-1 py-1.5 text-center font-bold text-[11px] text-slate-400 rounded-lg";
+            } else {
+                tBox.classList.remove("hidden"); mBox.classList.add("hidden");
+                btnT.className = "flex-1 py-1.5 text-center font-bold text-[11px] bg-slate-950 text-amber-400 rounded-lg shadow";
+                btnM.className = "flex-1 py-1.5 text-center font-bold text-[11px] text-slate-400 rounded-lg";
             }
-
-            // Desktop Dynamic Live Row Rendering
-            desktopTbody.innerHTML = filteredDataset.map(item => `
-                <tr class="hover:bg-slate-900/20 transition-colors">
-                    <td class="p-4">
-                        <div class="font-bold text-slate-200">${item.brand || 'N/A'}</div>
-                        <div class="text-[11px] text-blue-400 font-mono mt-0.5">${item.link || 'Live Source Map'}</div>
-                    </td>
-                    <td class="p-4 text-slate-300 font-medium">${item.exec || 'Executive Manager'}</td>
-                    <td class="p-4"><span class="bg-slate-950 border border-slate-800 text-slate-400 text-[11px] px-2.5 py-1 rounded-lg font-medium">${item.tag || 'Live Node Extraction'}</span></td>
-                    <td class="p-4 text-xs font-mono text-emerald-400">
-                        <div class="flex items-center gap-1 pt-1">
-                            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> ${item.log || '100% Secure Pass'}
-                        </div>
-                    </td>
-                    <td class="p-4">
-                        <div class="flex items-center justify-center gap-2">
-                            <a href="https://wa.me/${item.phone}?text=${encodeURIComponent(item.msg)}" target="_blank" class="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500/30 text-emerald-400 rounded-xl transition-all" title="WhatsApp Instant Chat"><i data-lucide="message-square" class="w-4 h-4"></i></a>
-                            <a href="mailto:${item.email}?subject=Lead%20Discovery&body=${encodeURIComponent(item.msg)}" class="p-2 bg-slate-950 border border-slate-800 hover:border-blue-500/30 text-blue-400 rounded-xl transition-all" title="Direct Email Outreach"><i data-lucide="mail" class="w-4 h-4"></i></a>
-                            <a href="tel:${item.phone}" class="p-2 bg-slate-950 border border-slate-800 hover:border-purple-500/30 text-purple-400 rounded-xl transition-all" title="Direct Cellular Call"><i data-lucide="phone" class="w-4 h-4"></i></a>
-                        </div>
-                    </td>
-                </tr>
-            `).join('');
-
-            // Mobile Dynamic Responsive Card Rendering
-            mobileContainer.innerHTML = filteredDataset.map(item => `
-                <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-3 shadow-md">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h4 class="font-bold text-slate-200 text-sm">${item.brand || 'N/A'}</h4>
-                            <p class="text-[11px] text-blue-400 font-mono mt-0.5">${item.link || 'Live Source Map'}</p>
-                        </div>
-                        <span class="bg-slate-950 border border-slate-800 text-slate-400 text-[10px] px-2 py-0.5 rounded-md font-medium">${item.tag || 'Live Node'}</span>
-                    </div>
-                    <div class="text-xs space-y-1 text-slate-300 bg-slate-950/50 p-3 rounded-lg border border-slate-800/40">
-                        <div><span class="text-slate-500 font-semibold">Executive Target:</span> ${item.exec || 'Executive Manager'}</div>
-                        <div class="text-emerald-400 font-mono flex items-center gap-1 text-[11px] mt-1"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> ${item.log || 'Verified Node'}</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-2 pt-1">
-                        <a href="https://wa.me/${item.phone}?text=${encodeURIComponent(item.msg)}" target="_blank" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-emerald-400 font-bold text-xs gap-1 transition-all"><i data-lucide="message-square" class="w-3.5 h-3.5"></i> Chat</a>
-                        <a href="mailto:${item.email}?subject=Lead%20Discovery&body=${encodeURIComponent(item.msg)}" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-blue-400 font-bold text-xs gap-1 transition-all"><i data-lucide="mail" class="w-3.5 h-3.5"></i> Email</a>
-                        <a href="tel:${item.phone}" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-purple-400 font-bold text-xs gap-1 transition-all"><i data-lucide="phone" class="w-3.5 h-3.5"></i> Call</a>
-                    </div>
-                </div>
-            `).join('');
-
-            lucide.createIcons();
         }
 
-        // ⚡ ASLI LIVE BACKEND FETCH INTEGRATION WITH INPUT AUTO-RESET
-        async function triggerSearchMining() {
-            const keywordInputEl = document.getElementById('mining-keyword');
-            const locationInputEl = document.getElementById('mining-location');
-            
-            const keyword = keywordInputEl.value.trim();
-            const location = locationInputEl.value.trim();
-            const searchBtn = document.getElementById('search-btn');
-            const liveIndicator = document.getElementById('live-indicator');
+        function selectProductTier(tierKey) {
+            document.getElementById("payment-gateway-wrapper").classList.remove("hidden");
+            const wrapperINR = document.getElementById("gateway-inr-upi");
+            const wrapperGlobal = document.getElementById("gateway-global-stripe");
 
-            if (!keyword) {
-                alert("Please enter a valid target keyword.");
-                return;
+            if (geoPricingMatrix && geoPricingMatrix.country === "IN") {
+                wrapperINR.classList.remove("hidden"); wrapperGlobal.classList.add("hidden");
+            } else {
+                wrapperGlobal.classList.remove("hidden"); wrapperINR.classList.add("hidden");
             }
+        }
 
-            // UI Changes to show loading status
-            searchBtn.disabled = true;
-            searchBtn.innerHTML = `<i data-lucide="loader" class="w-3.5 h-3.5 animate-spin"></i> Mining Real-Time Data Nodes...`;
-            liveIndicator.className = "w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping";
-            lucide.createIcons();
+        function toggleDropdown() {
+            const drop = document.getElementById("profile-dropdown");
+            drop.classList.toggle("hidden");
+            document.getElementById("drop-node-id").innerText = sessionNodeId;
+        }
 
-            try {
-                // Sending live HTTP request to your Replit/Render server
-                const response = await fetch(`${BACKEND_URL}/api/search`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ keyword: keyword, location: location })
+        function openHistory() {
+            document.getElementById("profile-dropdown").classList.add("hidden");
+            const modal = document.getElementById("history-modal");
+            modal.classList.remove("hidden");
+
+            fetch(`/api/v1/history/${sessionNodeId}`)
+                .then(res => res.json())
+                .then(data => {
+                    const box = document.getElementById("history-rows-container");
+                    box.innerHTML = "";
+                    if (!data.history || data.history.length === 0) {
+                        box.innerHTML = `<div class="text-slate-600 py-4 text-center">No build records discovered.</div>`;
+                        return;
+                    }
+                    data.history.forEach((h) => {
+                        const row = document.createElement("div");
+                        row.className = "p-2 bg-slate-900 border border-slate-800 rounded-xl flex justify-between items-center cursor-pointer mb-2";
+                        row.innerHTML = `<p class="text-slate-200 truncate max-w-xs">"${h.task}"</p><span class="text-[9px] text-emerald-400 uppercase font-black">Restore</span>`;
+                        row.onclick = function() {
+                            lastReceivedOutput = h.code;
+                            document.getElementById("lazy-render-trigger-placeholder").classList.remove("hidden");
+                            modal.classList.add("hidden");
+                        };
+                        box.appendChild(row);
+                    });
                 });
-
-                if (!response.ok) throw new Error("Server communication fault");
-
-                const rawData = await response.json();
-                
-                // Formatting data properly with extracted fields
-                globalLeadMatrix = rawData.map(item => {
-                    let rawPhone = item.phone ? item.phone.replace(/[^0-9]/g, '') : "919999999999";
-                    return {
-                        brand: item.title || item.name || item.brand || "Business Entity",
-                        link: item.address || item.website || item.link || "Live Coordinates Stack",
-                        exec: item.executive || item.name || "Decision Maker",
-                        tag: activeSourceFilter === 'all' ? "Universal Node Extracted" : `${activeSourceFilter.toUpperCase()} Crawler`,
-                        log: "SSL Security Pass & Verified",
-                        phone: rawPhone,
-                        email: item.email || "info@corporate-prospect.com",
-                        msg: `Hello, extracted details via Neyon Matrix AI framework for "${keyword}". Let's discuss business automation options.`,
-                        filterGroup: activeSourceFilter === 'all' ? 'maps' : activeSourceFilter
-                    };
-                });
-
-                renderDynamicStreamGrid();
-                liveIndicator.className = "w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse";
-
-                // 🔄 AUTOMATIC REFRESH/RESET INPUT BOXES AFTER FETCH
-                keywordInputEl.value = '';
-                locationInputEl.value = '';
-
-            } catch (error) {
-                console.error("Extraction error:", error);
-                alert("Failed to Fetch: Connection with backend server timed out. Check if Replit server is live.");
-                liveIndicator.className = "w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse";
-            } finally {
-                searchBtn.disabled = false;
-                searchBtn.innerHTML = `<i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Deploy Global Crawler Node`;
-                lucide.createIcons();
-            }
         }
-
-        function exportStructuredCSV() {
-            if (globalLeadMatrix.length === 0) {
-                alert("No extracted data packets available to compile into a CSV layout.");
-                return;
-            }
-            let csvContent = "data:text/csv;charset=utf-8,Company,Location/Link,Executive,Phone,Email\n";
-            globalLeadMatrix.forEach(r => {
-                csvContent += `"${r.brand}","${r.link}","${r.exec}","${r.phone}","${r.email}"\n`;
-            });
-            const encodedUri = encodeURI(csvContent);
-            const link = document.createElement("a");
-            link.setAttribute("href", encodedUri);
-            link.setAttribute("download", `Neyon_Matrix_Extract_${Date.now()}.csv`);
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
+        function closeHistory() { document.getElementById("history-modal").classList.add("hidden"); }
     </script>
 </body>
 </html>
