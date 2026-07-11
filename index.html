@@ -1,374 +1,257 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full bg-slate-950 text-slate-100">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Neyon Matrix AI - Global B2B Lead Generation & Mining Intelligence</title>
-    <meta name="description" content="Deploy automated multi-source mining nodes. Neyon Matrix AI extracts live, verified business contacts globally across all industries with direct instant outreach channels.">
-    <meta name="keywords" content="B2B lead generation tool, global business database, web scraper engine, verified email contacts, marketing automation console">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://neyonmatrix.ai">
-    
-    <meta property="og:title" content="Neyon Matrix AI - Universal Business Intelligence Engine">
-    <meta property="og:description" content="Extract verified corporate prospects, local businesses, and market leads worldwide. Real-time extraction with single-click WhatsApp, Email, & Call routing.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://neyonmatrix.ai">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Neyon Matrix Intelligence Hub">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Neyon Matrix AI - High-Speed Universal Data Node">
-    <meta name="twitter:description" content="Automate international B2B outreach pipelines and target any niche efficiently.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
+    <title>Omniverse Infinite Design Engine & Console</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .cyber-glow { box-shadow: 0 0 40px -15px rgba(59, 130, 246, 0.25); }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .font-mono-premium {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .theme-transition {
+            transition: all 0.3s ease-in-out;
+        }
     </style>
 </head>
-<body class="h-full antialiased relative">
+<body id="main-body" class="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col md:flex-row">
 
-    <div class="min-h-screen flex flex-col justify-between">
-        
-        <header class="border-b border-slate-900 bg-slate-950/80 backdrop-blur-xl sticky top-0 z-50 px-4 lg:px-8 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="p-2 bg-blue-600/10 border border-blue-500/20 rounded-xl text-blue-400">
-                    <i data-lucide="activity" class="w-5 h-5"></i>
+    <aside class="w-full md:w-80 bg-white border-b md:border-b-0 md:border-r border-slate-200 p-6 flex flex-col justify-between sticky top-0 md:h-screen z-50 overflow-y-auto">
+        <div class="space-y-6">
+            <div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-xl">🛠️</span>
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-slate-800">Design Studio Panel</h2>
                 </div>
-                <div>
-                    <h1 class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
-                        Neyon Matrix AI <span class="text-[10px] bg-blue-500/10 border border-blue-500/20 text-blue-400 px-2 py-0.5 rounded-full font-medium">Console v2.5</span>
-                    </h1>
-                </div>
+                <p class="text-[11px] text-slate-500 mt-1">Bina code badle screen par hi live look and feel design karo.</p>
             </div>
 
-            <div class="flex items-center gap-4">
-                <button onclick="openRechargeModal()" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-lg shadow-blue-500/10">
-                    <i data-lucide="zap" class="w-3.5 h-3.5"></i> Recharge Plan
-                </button>
-                <div class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 text-xs font-semibold" title="Secure Encryption Active">
-                    <i data-lucide="user-check" class="w-4 h-4 text-emerald-400"></i>
-                </div>
-            </div>
-        </header>
-
-        <main class="flex-grow p-4 lg:p-8 space-y-6 max-w-6xl mx-auto w-full">
-            
-            <section class="bg-slate-900/40 border border-slate-800 rounded-2xl p-5 space-y-4">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-                    <div>
-                        <h2 class="text-sm font-bold text-slate-200 uppercase tracking-wider flex items-center gap-2">
-                            <i data-lucide="globe" class="w-4 h-4 text-blue-400"></i> Global Discovery Engine
-                        </h2>
-                        <p class="text-[11px] text-slate-400 mt-0.5">Target any country or custom business niche worldwide seamlessly.</p>
-                    </div>
-                    
-                    <div class="flex flex-wrap gap-2 w-full sm:w-auto">
-                        <button onclick="setActiveSourceFilter('all')" id="filter-all" class="bg-blue-600/10 border border-blue-500/40 text-blue-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none">
-                            <i data-lucide="shuffle" class="w-3.5 h-3.5"></i> All Nodes
-                        </button>
-                        <button onclick="setActiveSourceFilter('maps')" id="filter-maps" class="bg-slate-950 border border-slate-800 text-slate-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none">
-                            <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Maps Crawler
-                        </button>
-                        <button onclick="setActiveSourceFilter('web')" id="filter-web" class="bg-slate-950 border border-slate-800 text-slate-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none">
-                            <i data-lucide="code" class="w-3.5 h-3.5"></i> Web Extractor
-                        </button>
-                        <button onclick="setActiveSourceFilter('marketplaces')" id="filter-marketplaces" class="bg-slate-950 border border-slate-800 text-slate-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none">
-                            <i data-lucide="shopping-cart" class="w-3.5 h-3.5"></i> Marketplaces
-                        </button>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
-                    <div class="relative">
-                        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-[10px] uppercase font-bold text-slate-600">Niche Target</span>
-                        <input type="text" id="mining-keyword" placeholder="Enter keywords (e.g., Real Estate & Wholesalers)" class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-24 pr-4 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500 font-medium">
-                    </div>
-                    <div class="relative">
-                        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-[10px] uppercase font-bold text-slate-600">Global Region</span>
-                        <input type="text" id="mining-location" placeholder="Enter region (e.g., Dubai / USA / India)" class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-24 pr-4 py-2.5 text-xs text-white focus:outline-none focus:border-blue-500 font-medium">
-                    </div>
-                    <div>
-                        <button id="search-btn" onclick="triggerSearchMining()" class="w-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-1.5 shadow-md">
-                            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Deploy Global Crawler Node
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="bg-slate-900/30 border border-slate-800 rounded-2xl overflow-hidden shadow-sm">
-                <div class="p-4 border-b border-slate-800 flex justify-between items-center bg-slate-900/10">
-                    <div class="flex items-center gap-2">
-                        <span id="live-indicator" class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                        <h3 class="text-xs font-bold text-slate-400 tracking-wide uppercase">Universal Target Extraction Matrix</h3>
-                    </div>
-                    <button onclick="exportStructuredCSV()" class="text-[11px] font-semibold bg-slate-950 hover:bg-slate-900 border border-slate-800 text-emerald-400 px-3 py-1.5 rounded-xl flex items-center gap-1 transition-all">
-                        <i data-lucide="download" class="w-3.5 h-3.5"></i> Export Universal CSV
+            <div class="space-y-2.5">
+                <label class="text-[10px] font-mono-premium font-bold tracking-wider text-slate-400 uppercase">1-Click Look Presets</label>
+                <div class="grid grid-cols-1 gap-2">
+                    <button onclick="applyPreset('clean')" class="w-full text-left text-xs font-semibold px-3 py-2.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-800 hover:bg-slate-100 transition flex items-center justify-between cursor-pointer">
+                        <span>⚪ Minimalist Corporate Light</span>
+                        <span class="text-[9px] bg-slate-200 text-slate-600 px-1.5 py-0.5 rounded">Stripe Style</span>
+                    </button>
+                    <button onclick="applyPreset('luxury')" class="w-full text-left text-xs font-semibold px-3 py-2.5 rounded-lg border border-amber-200 bg-amber-50/40 text-amber-950 hover:bg-amber-50 transition flex items-center justify-between cursor-pointer">
+                        <span>👑 Ultra Luxury Executive Gold</span>
+                        <span class="text-[9px] bg-amber-200/60 text-amber-800 px-1.5 py-0.5 rounded">Premium</span>
+                    </button>
+                    <button onclick="applyPreset('dark-neon')" class="w-full text-left text-xs font-semibold px-3 py-2.5 rounded-lg border border-slate-800 bg-slate-900 text-slate-100 hover:bg-slate-850 transition flex items-center justify-between cursor-pointer">
+                        <span>⚫ Pro Cyber Dark Neon</span>
+                        <span class="text-[9px] bg-indigo-500/20 text-indigo-300 px-1.5 py-0.5 rounded">Vercel Vibe</span>
                     </button>
                 </div>
+            </div>
 
-                <div class="hidden md:block overflow-x-auto w-full">
-                    <table class="w-full text-left border-collapse whitespace-nowrap">
-                        <thead>
-                            <tr class="border-b border-slate-800 text-slate-400 text-xs font-semibold bg-slate-950/20">
-                                <th class="p-4">Target Company Entity</th>
-                                <th class="p-4">Decision Maker Executive</th>
-                                <th class="p-4">Extraction Channel Source</th>
-                                <th class="p-4">Security Verification Log</th>
-                                <th class="p-4 text-center">Instant Outreach Channels</th>
-                            </tr>
-                        </thead>
-                        <tbody id="desktop-stream-tbody" class="text-xs divide-y divide-slate-900">
-                            <tr><td colspan="5" class="text-center text-slate-500 py-8">Enter target niche and deploy crawler to fetch live data.</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div id="mobile-stream-cards-container" class="block md:hidden p-4 space-y-3">
-                    <div class="text-center text-slate-500 p-6 text-xs font-medium">Enter target niche and deploy crawler to fetch live data.</div>
-                </div>
-            </section>
-
-        </main>
-
-        <div id="recharge-modal-holder" class="hidden fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4">
-            <div class="bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-6 relative space-y-6 cyber-glow">
+            <div class="space-y-4 pt-4 border-t border-slate-100">
+                <label class="text-[10px] font-mono-premium font-bold tracking-wider text-slate-400 uppercase">Manual Live Tuning</label>
                 
-                <div class="flex justify-between items-center border-b border-slate-800 pb-3">
-                    <div>
-                        <h3 class="text-base font-bold text-white flex items-center gap-1.5">
-                            <i data-lucide="credit-card" class="text-blue-400 w-4 h-4"></i> High-Speed Lead Matrix Refill
-                        </h3>
-                        <p class="text-[11px] text-slate-400 mt-0.5">Deploy authorized processing packets directly into your extraction system.</p>
+                <div class="space-y-1.5">
+                    <span class="text-xs font-medium text-slate-700 flex justify-between">
+                        <span>Component Roundness</span>
+                    </span>
+                    <div class="flex gap-1.5">
+                        <button onclick="changeRadius('none')" class="text-[10px] bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-sm font-mono-premium cursor-pointer">0px</button>
+                        <button onclick="changeRadius('md')" class="text-[10px] bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-md font-mono-premium cursor-pointer">6px</button>
+                        <button onclick="changeRadius('xl')" class="text-[10px] bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-lg font-mono-premium cursor-pointer">12px</button>
                     </div>
-                    <button onclick="closeRechargeModal()" class="p-1.5 bg-slate-950 hover:bg-slate-800 border border-slate-800 rounded-full text-slate-400 hover:text-white transition-all">
-                        <i data-lucide="x" class="w-4 h-4"></i>
-                    </button>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    
-                    <div class="bg-slate-950 border border-slate-800 rounded-xl p-5 flex flex-col justify-between space-y-4">
-                        <div class="space-y-1.5">
-                            <span class="text-[9px] uppercase tracking-wider font-extrabold text-slate-400 bg-slate-800 px-2 py-0.5 rounded-sm">File 01: Professional</span>
-                            <div class="text-2xl font-black text-white">₹999<span class="text-[10px] text-slate-500 font-normal"> / mo</span></div>
-                            <p class="text-[11px] text-slate-400 leading-snug">Extract up to 1,000 Verified Premium Target Leads safely across global routes.</p>
-                        </div>
-                        <a href="https://rzp.io/l/existing_professional_plan" target="_blank" class="block w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs py-2 rounded-xl transition-all">Activate Plan</a>
+                <div class="space-y-1.5">
+                    <span class="text-xs font-medium text-slate-700">Dynamic Highlight Injector</span>
+                    <div class="flex items-center gap-2">
+                        <button onclick="changeAccent('#0f172a', 'slate')" class="h-6 w-6 rounded-full bg-slate-900 border border-slate-300 cursor-pointer" title="Slate"></button>
+                        <button onclick="changeAccent('#b45309', 'amber')" class="h-6 w-6 rounded-full bg-amber-600 border border-slate-300 cursor-pointer" title="Gold"></button>
+                        <button onclick="changeAccent('#2563eb', 'blue')" class="h-6 w-6 rounded-full bg-blue-600 border border-slate-300 cursor-pointer" title="Tech Blue"></button>
+                        <button onclick="changeAccent('#10b981', 'emerald')" class="h-6 w-6 rounded-full bg-emerald-500 border border-slate-300 cursor-pointer" title="Live Green"></button>
                     </div>
-
-                    <div class="bg-slate-950 border border-slate-800 rounded-xl p-5 flex flex-col justify-between space-y-4">
-                        <div class="space-y-1.5">
-                            <span class="text-[9px] uppercase tracking-wider font-extrabold text-purple-400 bg-purple-950/40 px-2 py-0.5 rounded-sm">File 02: Enterprise</span>
-                            <div class="text-2xl font-black text-white">₹2,500<span class="text-[10px] text-slate-500 font-normal"> / mo</span></div>
-                            <p class="text-[11px] text-slate-400 leading-snug">3,000 High-Integrity Premium Business Profiles injected via fast cloud lines.</p>
-                        </div>
-                        <a href="phonepe://pay?pa=neyonmatrix@ybl&pn=NeyonMatrixAI&am=2500&cu=INR" class="block w-full text-center bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs py-2 rounded-xl transition-all">Pay via PhonePe</a>
-                    </div>
-
-                    <div class="bg-gradient-to-b from-blue-950/20 to-slate-950 border border-blue-600 rounded-xl p-5 flex flex-col justify-between space-y-4 relative">
-                        <div class="space-y-1.5">
-                            <span class="text-[9px] uppercase tracking-wider font-extrabold text-blue-400 bg-blue-950/50 px-2 py-0.5 rounded-sm">File 03: Unlimited</span>
-                            <div class="text-2xl font-black text-white">₹3,999<span class="text-[10px] text-slate-500 font-normal"> / mo</span></div>
-                            <p class="text-[11px] text-slate-400 leading-snug">Uncapped parallel extraction pipelines with automated background webhooks.</p>
-                        </div>
-                        <a href="https://rzp.io/rzp/1uPtcbJt" target="_blank" class="block w-full text-center bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs py-2 rounded-xl transition-all shadow-md">Deploy Stack</a>
-                    </div>
-
                 </div>
             </div>
         </div>
 
-        <footer class="border-t border-slate-900 bg-slate-950 py-4 text-center text-[11px] text-slate-600">
-            <p>© 2026 Neyon Matrix AI. Engineered for WhatsApp & Telegram High Conversion Link Architecture.</p>
-        </footer>
+        <div class="text-[10px] font-mono-premium text-slate-400 mt-6 pt-4 border-t border-slate-100">
+            Engine Mode: Live Variable Styler
+        </div>
+    </aside>
+
+    <div id="dashboard-container" class="flex-grow p-6 sm:p-10 space-y-6 overflow-y-auto theme-transition">
+        
+        <header id="dash-card-header" class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs flex flex-col md:flex-row justify-between items-start md:items-center gap-4 theme-transition">
+            <div>
+                <p id="sub-title-text" class="text-[10px] font-mono-premium tracking-widest text-slate-400 uppercase font-bold">High-Revenue SaaS Matrix Pipeline</p>
+                <h2 id="title-text" class="text-2xl font-bold tracking-tight text-slate-900 mt-0.5">Executive Operational Portfolio</h2>
+                <p id="desc-text" class="text-slate-500 text-sm max-w-2xl mt-1 leading-relaxed">
+                    Real-time cloud asset telemetry, multi-tenant resource architecture, and optimized financial pipelines running live metrics.
+                </p>
+            </div>
+            <div id="header-stat-box" class="bg-slate-50 border border-slate-200 p-3 rounded-lg flex items-center space-x-4 w-full md:w-auto theme-transition">
+                <div class="font-mono-premium">
+                    <p class="text-[10px] text-slate-400 font-bold uppercase">Active Nodes</p>
+                    <p class="text-lg font-bold text-slate-900">4,129 Active</p>
+                </div>
+                <span class="h-8 w-px bg-slate-200"></span>
+                <div class="font-mono-premium">
+                    <p class="text-[10px] text-slate-400 font-bold uppercase">Regions</p>
+                    <p class="text-lg font-bold text-slate-900">14 Zones</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+            <div class="dash-card bg-white rounded-xl border border-slate-200 shadow-xs p-5 flex flex-col justify-between theme-transition">
+                <div>
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">🎙️ Voice Automation Hub</h3>
+                        <span class="accent-tag text-[9px] font-mono-premium font-bold text-slate-600 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded">GPT-4O REALTIME</span>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-3xl font-bold text-slate-900 tracking-tight font-mono-premium">4.892M</p>
+                        <p class="text-xs text-slate-500">Synchronized Token Allocation Stream</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between text-[11px] font-mono-premium text-slate-400">
+                    <span>Lifetime Volume:</span>
+                    <span class="text-slate-700 font-semibold">12.5M tokens</span>
+                </div>
+            </div>
+
+            <div class="dash-card bg-white rounded-xl border border-slate-200 shadow-xs p-5 flex flex-col justify-between theme-transition">
+                <div>
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">📉 Infrastructure FinOps</h3>
+                        <span class="accent-tag text-[9px] font-mono-premium font-bold text-slate-600 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded">AWS AUTO-SCALE</span>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-3xl font-bold text-slate-900 tracking-tight font-mono-premium">₹4,52,300</p>
+                        <p class="text-xs text-slate-500">Automated Cost Strategy Retained</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between text-[11px] font-mono-premium text-slate-400">
+                    <span>Cluster Target:</span>
+                    <span class="text-slate-700 font-semibold">ASG-PROD</span>
+                </div>
+            </div>
+
+            <div class="dash-card bg-white rounded-xl border border-slate-200 shadow-xs p-5 flex flex-col justify-between theme-transition sm:col-span-2 lg:col-span-1">
+                <div>
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">⚖️ Corporate Billing</h3>
+                        <span class="accent-tag text-[9px] font-mono-premium font-bold text-slate-600 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded">TAX MATCHED</span>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-3xl font-bold text-slate-900 tracking-tight font-mono-premium">142 <span class="text-xs font-normal text-slate-400">Units</span></p>
+                        <p class="text-xs text-slate-500">Corporate Audit Ledgers Dispatched</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between text-[11px] font-mono-premium text-slate-400">
+                    <span>Gross Ledger Pipeline:</span>
+                    <span class="text-slate-700 font-semibold">₹89.45 Lakh</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dash-card bg-white rounded-xl p-6 border border-slate-200 shadow-xs theme-transition">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-800 mb-4">System Ingestion Traffic Stability Spectrum</h3>
+            <div class="w-full bg-slate-50 rounded-xl p-4 relative overflow-hidden border border-slate-200">
+                <svg viewBox="0 0 1000 130" class="w-full h-auto stroke-2 fill-none min-w-[500px]">
+                    <path id="graph-path" d="M0,90 Q120,50 240,40 T480,70 T720,20 T880,55 T1000,10" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="dash-card bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs theme-transition">
+            <div class="w-full overflow-x-auto">
+                <table class="w-full text-left border-collapse text-xs min-w-[600px]">
+                    <thead>
+                        <tr class="border-b border-slate-200 bg-slate-50/70 text-slate-500 font-mono-premium">
+                            <th class="p-4 font-semibold uppercase">Transaction Identity Token</th>
+                            <th class="p-4 font-semibold uppercase">Operational Process Name</th>
+                            <th class="p-4 font-semibold uppercase">Tax Allocation Framework</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-700 font-mono-premium">
+                        <tr>
+                            <td class="p-4 text-slate-400">tx_premium_89431</td>
+                            <td class="p-4 font-sans text-slate-900 font-semibold">VOICE_AUTOMATION_PROD_INIT</td>
+                            <td class="p-4 text-slate-600">LUXURY_EXPORT_EXEMPT</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
 
     <script>
-        // 🚀 LIVE BACKEND CONNECTION LINK
-        const BACKEND_URL = "https://neyon-matrix-ai.onrender.com"; 
-        
-        let activeSourceFilter = 'all';
-        let globalLeadMatrix = []; // Live data will load here dynamically
+        // Realtime Theme Presets Engine
+        function applyPreset(theme) {
+            const body = document.getElementById('main-body');
+            const dashContainer = document.getElementById('dashboard-container');
+            const allCards = document.querySelectorAll('.dash-card, #dash-card-header');
+            const allText = document.querySelectorAll('#title-text, #desc-text, .text-slate-900, p');
+            const graphPath = document.getElementById('graph-path');
+            const tags = document.querySelectorAll('.accent-tag');
 
-        document.addEventListener("DOMContentLoaded", () => {
-            lucide.createIcons();
-        });
-
-        function openRechargeModal() { document.getElementById('recharge-modal-holder').classList.remove('hidden'); }
-        function closeRechargeModal() { document.getElementById('recharge-modal-holder').classList.add('hidden'); }
-
-        function setActiveSourceFilter(source) {
-            activeSourceFilter = source;
-            const targetIds = ['all', 'maps', 'web', 'marketplaces'];
-            
-            targetIds.forEach(id => {
-                const element = document.getElementById(`filter-${id}`);
-                if(id === source) {
-                    element.className = "bg-blue-600/10 border border-blue-500/40 text-blue-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none";
-                } else {
-                    element.className = "bg-slate-950 border border-slate-800 text-slate-400 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-1.5 transition-all flex-1 sm:flex-none";
-                }
-            });
-            
-            renderDynamicStreamGrid();
-        }
-
-        // 🛠️ AUTOMATED DISCOVERY MATRIX CHANNELS (FIXED BUTTON RENDERING)
-        function renderDynamicStreamGrid() {
-            const filteredDataset = activeSourceFilter === 'all' 
-                ? globalLeadMatrix 
-                : globalLeadMatrix.filter(item => item.filterGroup === activeSourceFilter);
-
-            const desktopTbody = document.getElementById('desktop-stream-tbody');
-            const mobileContainer = document.getElementById('mobile-stream-cards-container');
-
-            if(!filteredDataset || filteredDataset.length === 0) {
-                const emptyState = `<div class="text-center text-slate-500 p-6 text-xs font-medium">No live leads found in this channel node.</div>`;
-                desktopTbody.innerHTML = `<tr><td colspan="5" class="text-center text-slate-500 py-8">No data available for this node filter.</td></tr>`;
-                mobileContainer.innerHTML = emptyState;
-                return;
-            }
-
-            // Desktop Dynamic Live Row Rendering
-            desktopTbody.innerHTML = filteredDataset.map(item => `
-                <tr class="hover:bg-slate-900/20 transition-colors">
-                    <td class="p-4">
-                        <div class="font-bold text-slate-200">${item.brand || 'N/A'}</div>
-                        <div class="text-[11px] text-blue-400 font-mono mt-0.5">${item.link || 'Live Source Map'}</div>
-                    </td>
-                    <td class="p-4 text-slate-300 font-medium">${item.exec || 'Executive Manager'}</td>
-                    <td class="p-4"><span class="bg-slate-950 border border-slate-800 text-slate-400 text-[11px] px-2.5 py-1 rounded-lg font-medium">${item.tag || 'Live Node Extraction'}</span></td>
-                    <td class="p-4 text-xs font-mono text-emerald-400">
-                        <div class="flex items-center gap-1 pt-1">
-                            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> ${item.log || '100% Secure Pass'}
-                        </div>
-                    </td>
-                    <td class="p-4">
-                        <div class="flex items-center justify-center gap-2">
-                            <a href="https://wa.me/${item.phone}?text=${encodeURIComponent(item.msg)}" target="_blank" class="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500/30 text-emerald-400 rounded-xl transition-all" title="WhatsApp Instant Chat"><i data-lucide="message-square" class="w-4 h-4"></i></a>
-                            <a href="mailto:${item.email}?subject=Lead%20Discovery&body=${encodeURIComponent(item.msg)}" class="p-2 bg-slate-950 border border-slate-800 hover:border-blue-500/30 text-blue-400 rounded-xl transition-all" title="Direct Email Outreach"><i data-lucide="mail" class="w-4 h-4"></i></a>
-                            <a href="tel:${item.phone}" class="p-2 bg-slate-950 border border-slate-800 hover:border-purple-500/30 text-purple-400 rounded-xl transition-all" title="Direct Cellular Call"><i data-lucide="phone" class="w-4 h-4"></i></a>
-                        </div>
-                    </td>
-                </tr>
-            `).join('');
-
-            // Mobile Dynamic Responsive Card Rendering
-            mobileContainer.innerHTML = filteredDataset.map(item => `
-                <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-3 shadow-md">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h4 class="font-bold text-slate-200 text-sm">${item.brand || 'N/A'}</h4>
-                            <p class="text-[11px] text-blue-400 font-mono mt-0.5">${item.link || 'Live Source Map'}</p>
-                        </div>
-                        <span class="bg-slate-950 border border-slate-800 text-slate-400 text-[10px] px-2 py-0.5 rounded-md font-medium">${item.tag || 'Live Node'}</span>
-                    </div>
-                    <div class="text-xs space-y-1 text-slate-300 bg-slate-950/50 p-3 rounded-lg border border-slate-800/40">
-                        <div><span class="text-slate-500 font-semibold">Executive Target:</span> ${item.exec || 'Executive Manager'}</div>
-                        <div class="text-emerald-400 font-mono flex items-center gap-1 text-[11px] mt-1"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> ${item.log || 'Verified Node'}</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-2 pt-1">
-                        <a href="https://wa.me/${item.phone}?text=${encodeURIComponent(item.msg)}" target="_blank" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-emerald-400 font-bold text-xs gap-1 transition-all"><i data-lucide="message-square" class="w-3.5 h-3.5"></i> Chat</a>
-                        <a href="mailto:${item.email}?subject=Lead%20Discovery&body=${encodeURIComponent(item.msg)}" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-blue-400 font-bold text-xs gap-1 transition-all"><i data-lucide="mail" class="w-3.5 h-3.5"></i> Email</a>
-                        <a href="tel:${item.phone}" class="flex items-center justify-center py-2 bg-slate-950 border border-slate-800 rounded-xl text-purple-400 font-bold text-xs gap-1 transition-all"><i data-lucide="phone" class="w-3.5 h-3.5"></i> Call</a>
-                    </div>
-                </div>
-            `).join('');
-
-            lucide.createIcons();
-        }
-
-        // ⚡ ASLI LIVE BACKEND FETCH INTEGRATION WITH INPUT AUTO-RESET
-        async function triggerSearchMining() {
-            const keywordInputEl = document.getElementById('mining-keyword');
-            const locationInputEl = document.getElementById('mining-location');
-            
-            const keyword = keywordInputEl.value.trim();
-            const location = locationInputEl.value.trim();
-            const searchBtn = document.getElementById('search-btn');
-            const liveIndicator = document.getElementById('live-indicator');
-
-            if (!keyword) {
-                alert("Please enter a valid target keyword.");
-                return;
-            }
-
-            // UI Changes to show loading status
-            searchBtn.disabled = true;
-            searchBtn.innerHTML = `<i data-lucide="loader" class="w-3.5 h-3.5 animate-spin"></i> Mining Real-Time Data Nodes...`;
-            liveIndicator.className = "w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping";
-            lucide.createIcons();
-
-            try {
-                // Sending live HTTP request to your Replit/Render server
-                const response = await fetch(`${BACKEND_URL}/api/search`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ keyword: keyword, location: location })
+            if (theme === 'clean') {
+                body.className = "bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col md:flex-row";
+                dashContainer.className = "flex-grow p-6 sm:p-10 space-y-6 overflow-y-auto theme-transition";
+                graphPath.setAttribute('stroke', '#0f172a');
+                allCards.forEach(c => {
+                    c.style.backgroundColor = '#ffffff';
+                    c.style.borderColor = '#e2e8f0';
                 });
-
-                if (!response.ok) throw new Error("Server communication fault");
-
-                const rawData = await response.json();
-                
-                // Formatting data properly with extracted fields
-                globalLeadMatrix = rawData.map(item => {
-                    let rawPhone = item.phone ? item.phone.replace(/[^0-9]/g, '') : "919999999999";
-                    return {
-                        brand: item.title || item.name || item.brand || "Business Entity",
-                        link: item.address || item.website || item.link || "Live Coordinates Stack",
-                        exec: item.executive || item.name || "Decision Maker",
-                        tag: activeSourceFilter === 'all' ? "Universal Node Extracted" : `${activeSourceFilter.toUpperCase()} Crawler`,
-                        log: "SSL Security Pass & Verified",
-                        phone: rawPhone,
-                        email: item.email || "info@corporate-prospect.com",
-                        msg: `Hello, extracted details via Neyon Matrix AI framework for "${keyword}". Let's discuss business automation options.`,
-                        filterGroup: activeSourceFilter === 'all' ? 'maps' : activeSourceFilter
-                    };
+                tags.forEach(t => { t.className = "accent-tag text-[9px] font-mono-premium font-bold text-slate-600 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded"; });
+            } 
+            else if (theme === 'luxury') {
+                body.className = "bg-[#faf6f0] text-amber-950 antialiased min-h-screen flex flex-col md:flex-row";
+                dashContainer.className = "flex-grow p-6 sm:p-10 space-y-6 overflow-y-auto theme-transition bg-gradient-to-br from-amber-50/20 via-transparent to-transparent";
+                graphPath.setAttribute('stroke', '#b45309');
+                allCards.forEach(c => {
+                    c.style.backgroundColor = '#ffffff';
+                    c.style.borderColor = '#fcd34d';
                 });
-
-                renderDynamicStreamGrid();
-                liveIndicator.className = "w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse";
-
-                // 🔄 AUTOMATIC REFRESH/RESET INPUT BOXES AFTER FETCH
-                keywordInputEl.value = '';
-                locationInputEl.value = '';
-
-            } catch (error) {
-                console.error("Extraction error:", error);
-                alert("Failed to Fetch: Connection with backend server timed out. Check if Replit server is live.");
-                liveIndicator.className = "w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse";
-            } finally {
-                searchBtn.disabled = false;
-                searchBtn.innerHTML = `<i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Deploy Global Crawler Node`;
-                lucide.createIcons();
+                tags.forEach(t => { t.className = "accent-tag text-[9px] font-mono-premium font-bold text-amber-800 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded"; });
+            } 
+            else if (theme === 'dark-neon') {
+                body.className = "bg-[#090d16] text-slate-100 antialiased min-h-screen flex flex-col md:flex-row";
+                dashContainer.className = "flex-grow p-6 sm:p-10 space-y-6 overflow-y-auto theme-transition";
+                graphPath.setAttribute('stroke', '#6366f1');
+                allCards.forEach(c => {
+                    c.style.backgroundColor = '#111827';
+                    c.style.borderColor = '#1f2937';
+                });
+                tags.forEach(t => { t.className = "accent-tag text-[9px] font-mono-premium font-bold text-indigo-400 bg-indigo-950/50 border border-indigo-900 px-2 py-0.5 rounded"; });
             }
         }
 
-        function exportStructuredCSV() {
-            if (globalLeadMatrix.length === 0) {
-                alert("No extracted data packets available to compile into a CSV layout.");
-                return;
-            }
-            let csvContent = "data:text/csv;charset=utf-8,Company,Location/Link,Executive,Phone,Email\n";
-            globalLeadMatrix.forEach(r => {
-                csvContent += `"${r.brand}","${r.link}","${r.exec}","${r.phone}","${r.email}"\n`;
+        // Realtime Radius Control
+        function changeRadius(size) {
+            const elements = document.querySelectorAll('.dash-card, #dash-card-header, #header-stat-box');
+            elements.forEach(el => {
+                el.classList.remove('rounded-none', 'rounded-md', 'rounded-xl', 'rounded-2xl');
+                if (size === 'none') el.classList.add('rounded-none');
+                if (size === 'md') el.classList.add('rounded-md');
+                if (size === 'xl') el.classList.add('rounded-xl');
             });
-            const encodedUri = encodeURI(csvContent);
-            const link = document.createElement("a");
-            link.setAttribute("href", encodedUri);
-            link.setAttribute("download", `Neyon_Matrix_Extract_${Date.now()}.csv`);
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+        }
+
+        // Live Accent Injector
+        function changeAccent(color, name) {
+            const graphPath = document.getElementById('graph-path');
+            graphPath.setAttribute('stroke', color);
+            
+            const tags = document.querySelectorAll('.accent-tag');
+            tags.forEach(t => {
+                t.style.borderColor = color;
+                t.style.color = color;
+            });
         }
     </script>
 </body>
